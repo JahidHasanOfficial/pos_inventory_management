@@ -13,6 +13,19 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
+            $table->string('invoice_number')->unique();
+            $table->foreignId('customer_id')->nullable()->constrained()->onDelete('set null');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // cashier who made the sale
+            $table->decimal('subtotal', 10, 2);
+            $table->decimal('tax_amount', 10, 2)->default(0);
+            $table->decimal('discount_amount', 10, 2)->default(0);
+            $table->decimal('total_amount', 10, 2);
+            $table->decimal('paid_amount', 10, 2)->default(0);
+            $table->decimal('change_amount', 10, 2)->default(0);
+            $table->enum('payment_method', ['cash', 'card', 'online'])->default('cash');
+            $table->enum('status', ['pending', 'completed', 'cancelled'])->default('completed');
+            $table->text('notes')->nullable();
+            $table->timestamp('sale_date');
             $table->timestamps();
         });
     }
