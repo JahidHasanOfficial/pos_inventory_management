@@ -1,0 +1,1351 @@
+ <!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Topbar Light | Agroxa - Responsive Bootstrap 5 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="light" data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-dark.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="24">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-light.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="24">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-1 font-size-16 d-lg-none header-item waves-effect waves-light"
+                            data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="d-flex">
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="mdi mdi-magnify"></span>
+                            </div>
+                        </form>
+                        <div class="dropdown d-inline-block d-lg-none ms-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Search input">
+
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>s
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <!-- Notification -->
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-bell"></i>
+                                <span class="badge bg-info rounded-pill">3</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="d-flex mt-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="mdi mdi-cart"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="d-flex mt-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-warning rounded-circle font-size-16">
+                                                    <i class="mdi mdi-message"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">New Massage received</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">You have 87 unread message
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="d-flex mt-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-info rounded-circle font-size-16">
+                                                    <i class="mdi mdi-flag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="d-flex mt-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="mdi mdi-cart"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your Order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="d-flex mt-3">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-danger rounded-circle font-size-16">
+                                                    <i class="mdi mdi-message"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">New Massage received</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">You have 87 unread message
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="p-2 border-top d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View
+                                            More..</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User -->
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                            </button>
+
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i
+                                        class="mdi mdi-account-circle font-size-16 align-middle me-2 text-muted"></i>
+                                    <span>Profile</span></a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="mdi mdi-wallet font-size-16 align-middle text-muted me-2"></i>
+                                    <span>My Wallet</span></a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i
+                                        class="mdi mdi-wrench font-size-16 align-middle text-muted me-2"></i>
+                                    <span>Settings</span></a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="mdi mdi-lock-open-outline font-size-16 text-muted align-middle me-2"></i>
+                                    <span>Lock screen</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-primary" href="#"><i
+                                        class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
+                                    <span>Logout</span></a>
+                            </div>
+                        </div>
+
+                        <!-- Setting -->
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                <i class="mdi mdi-cog"></i>
+                            </button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="topnav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">
+                                        <i class="mdi mdi-home me-2"></i><span>Dashboards</span>
+
+                                    </a>
+                                </li>
+
+                                <!-- UI Elements  -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-uielement" role="button">
+                                        <i class="mdi mdi-buffer me-1"></i>
+                                        <span> UI Elements</span>
+                                        <div class="arrow-down"></div>
+
+                                    </a>
+
+                                    <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg"
+                                        aria-labelledby="topnav-uielement">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div>
+                                                    <a href="ui-alerts.html" class="dropdown-item">Alerts</a>
+                                                    <a href="ui-buttons.html" class="dropdown-item">Buttons</a>
+                                                    <a href="ui-cards.html" class="dropdown-item">Cards</a>
+                                                    <a href="ui-carousel.html" class="dropdown-item">Carousel</a>
+                                                    <a href="ui-dropdowns.html" class="dropdown-item">Dropdowns</a>
+                                                    <a href="ui-grid.html" class="dropdown-item">Grid</a>
+                                                    <a href="ui-images.html" class="dropdown-item">Images</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div>
+
+                                                    <a href="ui-modals.html" class="dropdown-item">Modals</a>
+                                                    <a href="ui-pagination.html" class="dropdown-item">Pagination
+                                                    </a>
+                                                    <a href="ui-popover-tooltips.html" class="dropdown-item">Popover & Tooltips</a>
+                                                    <a href="ui-progressbars.html" class="dropdown-item">Progress Bars</a>
+                                                    <a href="ui-tabs-accordions.html" class="dropdown-item">Tabs & Accordions</a>
+                                                    <a href="ui-typography.html" class="dropdown-item">Typography</a>
+                                                    <a href="ui-video.html" class="dropdown-item">Video</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <!-- Components -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button">
+                                        <i class="mdi mdi-black-mesa me-1"></i>
+                                        <span>Components</span>
+                                        <div class="arrow-down"></div>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-components">
+
+
+                                        <a href="components-lightbox.html" class="dropdown-item">Lightbox</a>
+                                        <a href="components-range-slider.html" class="dropdown-item">RangeSlider</a>
+                                        <a href="components-session-timeout.html" class="dropdown-item">Session Timeout</a>
+                                        <a href="components-sweet-alert.html" class="dropdown-item">Sweet-Alert</a>
+                                        <a href="calendar.html" class="dropdown-item">Calender</a>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-table"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Tables <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-table">
+                                                <a href="tables-basic.html" class="dropdown-item">Basic Tables</a>
+                                                <a href="tables-datatable.html" class="dropdown-item">Data Tables</a>
+                                                <a href="tables-responsive.html" class="dropdown-item">Responsive Table</a>
+                                                <a href="tables-editable.html" class="dropdown-item">Editable Table</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-forms"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Forms<div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-forms">
+                                                <div>
+                                                    <a href="form-elements.html" class="dropdown-item">Form Elements</a>
+                                                    <a href="form-validation.html" class="dropdown-item">Form Validation</a>
+                                                    <a href="form-advanced.html" class="dropdown-item">Form Advanced</a>
+                                                    <a href="form-editors.html" class="dropdown-item">Form Editors</a>
+                                                    <a href="form-uploads.html" class="dropdown-item">Form File Upload</a>
+                                                    <a href="form-xeditable.html" class="dropdown-item">Form Xeditable</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Icons <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-icons">
+                                                <a href="icons-materialdesign.html" class="dropdown-item">Material Design</a>
+                                                <a href="icons-ion-icons.html" class="dropdown-item">Ion Icons</a>
+                                                <a href="icons-fontawesome.html" class="dropdown-item">Font Awesome</a>
+                                                <a href="icons-themify-icons.html" class="dropdown-item">Themify Icons</a>
+                                                <a href="icons-dripicons.html" class="dropdown-item">Dripicons</a>
+                                                <a href="icons-typicons.html" class="dropdown-item">Typicons Icons</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-map"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Maps <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-map">
+                                                <a href="maps-google.html" class="dropdown-item">Google Maps</a>
+                                                <a href="maps-vector.html" class="dropdown-item">Vector Maps</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Charts -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-chart" role="button">
+                                        <i class="mdi mdi-finance me-1"></i>
+                                        <span>Charts </span>
+                                        <div class="arrow-down"></div>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-chart">
+                                        <div>
+                                            <a href="charts-chartist.html" class="dropdown-item">Chartist Chart</a>
+                                            <a href="charts-chartjs.html" class="dropdown-item">Chartjs Chart</a>
+                                            <a href="charts-flot.html" class="dropdown-item">Flot Chart</a>
+                                            <a href="charts-c3.html" class="dropdown-item">C3 Charts</a>
+                                            <a href="charts-morris.html" class="dropdown-item">Morris Charts</a>
+                                            <a href="charts-knob.html" class="dropdown-item">Jquery Knob Chart</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <!-- Pages -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button">
+                                        <i class="mdi mdi-file-document-multiple me-1"></i>
+                                        <span>Pages</span>
+                                        <div class="arrow-down"></div>
+
+                                    </a>
+
+                                    <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg"
+                                        aria-labelledby="topnav-pages">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div>
+                                                    <a href="pages-login.html" class="dropdown-item">Login</a>
+                                                    <a href="pages-register.html" class="dropdown-item">Register</a>
+                                                    <a href="pages-recoverpw.html" class="dropdown-item">Recover Password</a>
+                                                    <a href="pages-lock-screen.html" class="dropdown-item">Lock Screen</a>
+                                                    <a href="pages-timeline.html" class="dropdown-item">Timeline</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div>
+                                                    <a href="pages-invoice.html" class="dropdown-item">Invoice</a>
+                                                    <a href="pages-directory.html" class="dropdown-item">Directory
+                                                    </a>
+                                                    <a href="pages-starter.html" class="dropdown-item">Starter Page</a>
+                                                    <a href="pages-error404.html" class="dropdown-item">Error 404</a>
+                                                    <a href="pages-error500.html" class="dropdown-item">Error 500</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <!-- Email -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-email" role="button">
+                                        <i class="mdi mdi-email me-1"></i>
+                                        <span>Email </span>
+                                        <div class="arrow-down"></div>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-email">
+                                        <div>
+                                            <a href="email-inbox.html" class="dropdown-item">Inbox</a>
+                                            <a href="email-read.html" class="dropdown-item">Read Email</a>
+                                            <a href="email-compose.html" class="dropdown-item">Email Compose</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Layouts -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button">
+                                        <i class="mdi mdi-flip-horizontal me-1"></i><span>Layouts</span>
+                                        <div class="arrow-down"></div>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-layout">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Vertical</span>
+                                                <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-layout-verti">
+                                                <a href="layouts-dark-sidebar.html" class="dropdown-item">Dark Sidebar</a>
+                                                <a href="layouts-sidebar-user.html" class="dropdown-item">Sidebar With User</a>
+                                                <a href="layouts-icon-sidebar.html" class="dropdown-item">Icon Sidebar</a>
+                                                <a href="layouts-compact-sidebar.html" class="dropdown-item">Compact Sidebar</a>
+                                                <a href="layouts-boxed.html" class="dropdown-item">Boxed Layout</a>
+                                                <a href="layouts-scrollable.html" class="dropdown-item">Page Title 2</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-hori"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Horizontal</span>
+                                                <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-layout-hori">
+                                                <a href="layouts-horizontal.html" class="dropdown-item">Horizontal</a>
+                                                <a href="layouts-hori-topbarlight.html" class="dropdown-item">Topbar light</a>
+                                                <a href="layouts-hori-boxed.html" class="dropdown-item">Boxed Layout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <div class="page-title">
+                                        <h4 class="mb-0 font-size-18">Topbar Light</h4>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Agroxa</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Layouts</a></li>
+                                            <li class="breadcrumb-item active">Topbar Light</li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="state-information d-none d-sm-block">
+                                        <div class="state-graph">
+                                            <div id="header-chart-1" data-colors='["--bs-primary"]'></div>
+                                            <div class="info">Balance $ 2,317</div>
+                                        </div>
+                                        <div class="state-graph">
+                                            <div id="header-chart-2" data-colors='["--bs-warning"]'></div>
+                                            <div class="info">Item Sold 1230</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <!-- Start page content-wrapper -->
+                        <div class="page-content-wrapper">
+                            <div class="row">
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card bg-primary mini-stat position-relative">
+                                        <div class="card-body">
+                                            <div class="mini-stat-desc">
+                                                <h5 class="text-uppercase verti-label font-size-16  text-white-50">Orders
+                                                </h5>
+                                                <div class="text-white">
+                                                    <h5 class="text-uppercase  font-size-16 text-white-50">Orders</h5>
+                                                    <h3 class="mb-3 text-white">1,587</h3>
+                                                    <div class="">
+                                                        <span class="badge bg-light text-info"> +11% </span> <span
+                                                            class="ms-2">From previous period</span>
+                                                    </div>
+                                                </div>
+                                                <div class="mini-stat-icon">
+                                                    <i class="mdi mdi-cube-outline display-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card bg-primary mini-stat position-relative">
+                                        <div class="card-body">
+                                            <div class="mini-stat-desc">
+                                                <h5 class="text-uppercase verti-label font-size-16 text-white-50">Revenue
+                                                </h5>
+                                                <div class="text-white">
+                                                    <h5 class="text-uppercase font-size-16  text-white-50">Revenue</h5>
+                                                    <h3 class="mb-3 text-white">$46,785</h3>
+                                                    <div class="">
+                                                        <span class="badge bg-light text-danger"> -29% </span> <span
+                                                            class="ms-2">From previous period</span>
+                                                    </div>
+                                                </div>
+                                                <div class="mini-stat-icon">
+                                                    <i class="mdi mdi-buffer display-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card bg-primary mini-stat position-relative">
+                                        <div class="card-body">
+                                            <div class="mini-stat-desc">
+                                                <h5 class="text-uppercase font-size-16  verti-label text-white-50">Av. Price
+                                                </h5>
+                                                <div class="text-white">
+                                                    <h5 class="text-uppercase font-size-16  text-white-50">Average
+                                                        Price</h5>
+                                                    <h3 class="mb-3 text-white">15.9</h3>
+                                                    <div class="">
+                                                        <span class="badge bg-light text-primary"> 0% </span> <span
+                                                            class="ms-2">From previous period</span>
+                                                    </div>
+                                                </div>
+                                                <div class="mini-stat-icon">
+                                                    <i class="mdi mdi-tag-text-outline display-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-xl-3 col-md-6">
+                                    <div class="card bg-primary mini-stat position-relative">
+                                        <div class="card-body">
+                                            <div class="mini-stat-desc">
+                                                <h5 class="text-uppercase verti-label font-size-16  text-white-50">Pr. Sold
+                                                </h5>
+                                                <div class="text-white">
+                                                    <h5 class="text-uppercase font-size-16 text-white-50">Product Sold
+                                                    </h5>
+                                                    <h3 class="mb-3 text-white">1890</h3>
+                                                    <div class="">
+                                                        <span class="badge bg-light text-info"> +89% </span> <span
+                                                            class="ms-2">From previous period</span>
+                                                    </div>
+                                                </div>
+                                                <div class="mini-stat-icon">
+                                                    <i class="mdi mdi-briefcase-check display-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                            <!-- End Row -->
+
+                            <div class="row">
+                                <div class="col-xl-9">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-xl-8 border-end">
+                                                    <h4 class="card-title mb-4">Sales Report</h4>
+                                                    <div id="morris-area-example" class="dashboard-charts morris-charts" data-colors='["--bs-light", "--bs-danger", "--bs-primary"]'>
+                                                    </div>
+                                                </div>
+                                                <!-- End Col -->
+
+                                                <div class="col-xl-4">
+                                                    <h4 class="card-title mb-4">Yearly Sales Report</h4>
+                                                    <div class="p-3">
+                                                        <ul class="nav nav-pills nav-justified mb-3" role="tablist">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link active" id="pills-first-tab"
+                                                                    data-bs-toggle="pill" href="#pills-first" role="tab"
+                                                                    aria-controls="pills-first"
+                                                                    aria-selected="true">2015</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="pills-second-tab"
+                                                                    data-bs-toggle="pill" href="#pills-second" role="tab"
+                                                                    aria-controls="pills-second"
+                                                                    aria-selected="false">2016</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" id="pills-third-tab"
+                                                                    data-bs-toggle="pill" href="#pills-third" role="tab"
+                                                                    aria-controls="pills-third"
+                                                                    aria-selected="false">2017</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane show active" id="pills-first"
+                                                                role="tabpanel" aria-labelledby="pills-first-tab">
+                                                                <div class="p-3">
+                                                                    <h2>$17562</h2>
+                                                                    <p class="text-muted">Maecenas nec odio et ante
+                                                                        tincidunt tempus. Donec vitae sapien ut libero
+                                                                        venenatis faucibus Nullam quis ante.</p>
+                                                                    <a href="#" class="text-primary">Read more...</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane" id="pills-second" role="tabpanel"
+                                                                aria-labelledby="pills-second-tab">
+                                                                <div class="p-3">
+                                                                    <h2>$18614</h2>
+                                                                    <p class="text-muted">Maecenas nec odio et ante
+                                                                        tincidunt tempus. Donec vitae sapien ut libero
+                                                                        venenatis faucibus Nullam quis ante.</p>
+                                                                    <a href="#" class="text-primary">Read more...</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane" id="pills-third" role="tabpanel"
+                                                                aria-labelledby="pills-third-tab">
+                                                                <div class="p-3">
+                                                                    <h2>$19752</h2>
+                                                                    <p class="text-muted">Maecenas nec odio et ante
+                                                                        tincidunt tempus. Donec vitae sapien ut libero
+                                                                        venenatis faucibus Nullam quis ante.</p>
+                                                                    <a href="#" class="text-primary">Read more...</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Col -->
+                                            </div>
+                                            <!-- end row -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+
+                                <div class="col-xl-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-4">Sales Analytics</h4>
+                                            <div id="morris-donut-example" class="dashboard-charts morris-charts" data-colors='["--bs-light",  "--bs-primary", "--bs-success"]'></div>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-3">Inbox</h4>
+                                            <div data-simplebar style="max-height: 334px;">
+                                                <div class="inbox-wid">
+                                                    <a href="#" class="text-dark">
+                                                        <div class="inbox-item">
+                                                            <div class="inbox-item-img float-start me-3"><img
+                                                                    src="assets/images/users/avatar-1.jpg"
+                                                                    class="avatar-md rounded-circle" alt=""></div>
+                                                            <h6 class="inbox-item-author mb-1 text-dark">Irene</h6>
+                                                            <p class="inbox-item-text text-muted mb-0">Hey! there I'm
+                                                                available...</p>
+                                                            <p class="inbox-item-date text-muted">13:40 PM</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="text-dark">
+                                                        <div class="inbox-item">
+                                                            <div class="inbox-item-img float-start me-3"><img
+                                                                    src="assets/images/users/avatar-2.jpg"
+                                                                    class="avatar-md rounded-circle" alt=""></div>
+                                                            <h6 class="inbox-item-author mb-1 text-dark">Jennifer</h6>
+                                                            <p class="inbox-item-text text-muted mb-0">I've finished it! See
+                                                                you
+                                                                so...</p>
+                                                            <p class="inbox-item-date text-muted">13:34 PM</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="text-dark">
+                                                        <div class="inbox-item">
+                                                            <div class="inbox-item-img float-start me-3"><img
+                                                                    src="assets/images/users/avatar-3.jpg"
+                                                                    class="avatar-md rounded-circle" alt=""></div>
+                                                            <h6 class="inbox-item-author mb-1 text-dark">Richard</h6>
+                                                            <p class="inbox-item-text text-muted mb-0">This theme is
+                                                                awesome!
+                                                            </p>
+                                                            <p class="inbox-item-date text-muted">13:17 PM</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="text-dark">
+                                                        <div class="inbox-item">
+                                                            <div class="inbox-item-img float-start me-3"><img
+                                                                    src="assets/images/users/avatar-4.jpg"
+                                                                    class="avatar-md rounded-circle" alt=""></div>
+                                                            <h6 class="inbox-item-author mb-1 text-dark">Martin</h6>
+                                                            <p class="inbox-item-text text-muted mb-0">Nice to meet you</p>
+                                                            <p class="inbox-item-date text-muted">12:20 PM</p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="text-dark">
+                                                        <div class="inbox-item">
+                                                            <div class="inbox-item-img float-start me-3"><img
+                                                                    src="assets/images/users/avatar-5.jpg"
+                                                                    class="avatar-md rounded-circle" alt=""></div>
+                                                            <h6 class="inbox-item-author mb-1 text-dark">Sean</h6>
+                                                            <p class="inbox-item-text text-muted mb-0">Hey! there I'm
+                                                                available...</p>
+                                                            <p class="inbox-item-date text-muted">11:47 AM</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-xl-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-5 text-dark">Recent Activity Feed</h4>
+                                            <div>
+                                                <ul class="nav nav-pills nav-justified recent-activity-tab mb-4"
+                                                    id="recent-activity-tab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="activity1-tab" data-bs-toggle="pill"
+                                                            href="#activity1" role="tab" aria-controls="activity1"
+                                                            aria-selected="true">21 Sep</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="activity2-tab" data-bs-toggle="pill"
+                                                            href="#activity2" role="tab" aria-controls="activity2"
+                                                            aria-selected="false">22 Sep</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="activity3-tab" data-bs-toggle="pill"
+                                                            href="#activity3" role="tab" aria-controls="activity3"
+                                                            aria-selected="false">23 Sep</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="activity4-tab" data-bs-toggle="pill"
+                                                            href="#activity4" role="tab" aria-controls="activity4"
+                                                            aria-selected="false">24 Sep</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane show active" id="activity1" role="tabpanel"
+                                                        aria-labelledby="activity1-tab">
+                                                        <div class="p-3">
+                                                            <div class="text-muted">
+                                                                <p>21 Sep, 2018</p>
+                                                                <h5 class="text-dark font-size-16">Responded to need
+                                                                    “Volunteer
+                                                                    Activities”</h5>
+                                                                <p>Aenean vulputate eleifend tellus</p>
+                                                                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                                                                    sapien ut libero venenatis faucibus Nullam quis ante.
+                                                                </p>
+                                                                <a href="#" class="text-primary">Read More...</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="activity2" role="tabpanel"
+                                                        aria-labelledby="activity2-tab">
+                                                        <div class="p-3">
+                                                            <div class="text-muted">
+                                                                <p>22 Sep, 2018</p>
+                                                                <h5 class="text-dark font-size-16">Added an interest
+                                                                    “Volunteer
+                                                                    Activities”</h5>
+                                                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                                                                    amet consectetur velit sed quia non tempora incidunt.
+                                                                </p>
+                                                                <p>Ut enim ad minima veniam quis nostrum</p>
+                                                                <a href="#" class="text-primary">Read More...</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="activity3" role="tabpanel"
+                                                        aria-labelledby="activity3-tab">
+                                                        <div class="p-3">
+                                                            <div class="text-muted">
+                                                                <p>23 Sep, 2018</p>
+                                                                <h5 class="text-dark font-size-16">Joined the group
+                                                                    “Boardsmanship Forum”
+                                                                </h5>
+                                                                <p>Nemo enim voluptatem quia voluptas</p>
+                                                                <p>Donec pede justo fringilla vel aliquet nec vulputate eget
+                                                                    arcu. In enim justo rhoncus ut imperdiet a venenatis
+                                                                    vitae. </p>
+                                                                <a href="#" class="text-primary">Read More...</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="activity4" role="tabpanel"
+                                                        aria-labelledby="activity4-tab">
+                                                        <div class="p-3">
+                                                            <div class="text-muted">
+                                                                <p>24 Sep, 2018</p>
+                                                                <h5 class="text-dark font-size-16">Attending the event “Some
+                                                                    New Event”
+                                                                </h5>
+                                                                <p>At vero eos et accusamus et iusto odio</p>
+                                                                <p>Sed ut perspiciatis unde omnis iste natus error sit
+                                                                    voluptatem accusantium doloremque laudantium </p>
+                                                                <a href="#" class="text-primary">Read More...</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-xl-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-4">Top product sales</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-hover align-middle mb-0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="font-size-16">Computers</h5>
+                                                                <p class="text-muted mb-0">The languages only differ</p>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="peity-pie"
+                                                                    data-peity='{ "fill": ["#f16c69", "#f2f2f2"]}'
+                                                                        data-width="54" data-height="54">70/100</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-size-16">70%</h5>
+                                                                <p class="text-muted mb-0">Sales</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="font-size-16">Laptops</h5>
+                                                                <p class="text-muted mb-0">Maecenas tempus tellus</p>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="peity-donut"
+                                                                    data-peity='{ "fill": ["#35a989", "#f2f2f2"], "innerRadius": 20, "radius": 32 }'
+                                                                        data-width="54" data-height="54">9,4</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-size-16">84%</h5>
+                                                                <p class="text-muted mb-0">Sales</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="font-size-16">Ipad</h5>
+                                                                <p class="text-muted mb-0">Donec pede justo</p>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="peity-pie"
+                                                                    data-peity='{ "fill": ["#1b82ec", "#f2f2f2"]}'
+                                                                        data-width="54" data-height="54">62/100</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="">62%</h5>
+                                                                <p class="text-muted mb-0">Sales</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="font-size-16">Mobile</h5>
+                                                                <p class="text-muted mb-0">Aenean leo ligula</p>
+                                                            </td>
+                                                            <td>
+                                                                <div>
+                                                                    <span class="peity-donut"
+                                                                    data-peity='{ "fill": ["#35a989", "#f2f2f2"], "innerRadius": 20, "radius": 32 }'
+                                                                        data-width="54" data-height="54">20,4</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <h5 class="font-size-16">89%</h5>
+                                                                <p class="text-muted mb-0">Sales</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-4">Latest Transaction</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-hover align-middle mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">(#) Id</th>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th scope="col" colspan="2">Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">#15236</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Jeanette
+                                                                    James
+                                                                </div>
+                                                            </td>
+                                                            <td>14/8/2018</td>
+                                                            <td>$104</td>
+                                                            <td><span class="badge bg-success">Delivered</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#15237</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-3.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Christopher
+                                                                    Taylor
+                                                                </div>
+                                                            </td>
+                                                            <td>15/8/2018</td>
+                                                            <td>$112</td>
+                                                            <td><span class="badge bg-warning">Pending</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#15238</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Edward
+                                                                    Vazquez
+                                                                </div>
+                                                            </td>
+                                                            <td>15/8/2018</td>
+                                                            <td>$116</td>
+                                                            <td><span class="badge bg-success">Delivered</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#15239</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-5.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Michael
+                                                                    Flannery
+                                                                </div>
+                                                            </td>
+                                                            <td>16/8/2018</td>
+                                                            <td>$109</td>
+                                                            <td><span class="badge bg-primary">Cancel</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#15240</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Jamie
+                                                                    Fishbourne
+                                                                </div>
+                                                            </td>
+                                                            <td>17/8/2018</td>
+                                                            <td>$120</td>
+                                                            <td><span class="badge bg-success">Delivered</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- End Cardbody -->
+                                    </div>
+                                    <!-- End card -->
+                                </div>
+                                <!-- End Col -->
+
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-4">Latest Order</h4>
+                                            <div class="table-responsive order-table">
+                                                <table class="table table-hover align-middle mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">(#) Id</th>
+                                                            <th scope="col">Name</th>
+                                                            <th scope="col">Date/Time</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th scope="col" colspan="2">Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">#14562</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Matthew
+                                                                    Drapeau
+                                                                </div>
+                                                            </td>
+                                                            <td>17/8/2018
+                                                                <p class="font-size-13 text-muted mb-0">8:26AM</p>
+                                                            </td>
+                                                            <td>$104</td>
+                                                            <td><span class="badge bg-soft-success rounded-pill"><i
+                                                                        class="mdi mdi-checkbox-blank-circle text-success"></i>
+                                                                    Delivered</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#14563</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-5.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Ralph Shockey
+                                                                </div>
+                                                            </td>
+                                                            <td>18/8/2018
+                                                                <p class="font-size-13 text-muted mb-0">10:18AM</p>
+                                                            </td>
+                                                            <td>$112</td>
+                                                            <td><span class="badge bg-soft-warning rounded-pill"><i
+                                                                        class="mdi mdi-checkbox-blank-circle text-warning"></i>
+                                                                    Pending</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#14564</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-6.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Alexander
+                                                                    Pierson
+                                                                </div>
+                                                            </td>
+                                                            <td>18//8/2018
+                                                                <p class="font-size-13 text-muted mb-0">12:36PM</p>
+                                                            </td>
+                                                            <td>$116</td>
+                                                            <td><span class="badge bg-soft-success rounded-pill"><i
+                                                                        class="mdi mdi-checkbox-blank-circle text-success"></i>
+                                                                    Delivered</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#14565</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-7.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Robert Rankin
+                                                                </div>
+                                                            </td>
+                                                            <td>19/8/2018
+                                                                <p class="font-size-13 text-muted mb-0">11:47AM</p>
+                                                            </td>
+                                                            <td>$109</td>
+                                                            <td><span class="badge bg-soft-primary rounded-pill"><i
+                                                                        class="mdi mdi-checkbox-blank-circle text-primary"></i>
+                                                                    Cancel</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">#14566</th>
+                                                            <td>
+                                                                <div>
+                                                                    <img src="assets/images/users/avatar-8.jpg" alt=""
+                                                                        class="avatar-md rounded-circle me-2"> Myrna Shields
+                                                                </div>
+                                                            </td>
+                                                            <td>20/8/2018
+                                                                <p class="font-size-13 text-muted mb-0">02:52PM</p>
+                                                            </td>
+                                                            <td>$120</td>
+                                                            <td><span class="badge bg-soft-success rounded-pill"><i
+                                                                        class="mdi mdi-checkbox-blank-circle text-success"></i>
+                                                                    Delivered</span></td>
+                                                            <td>
+                                                                <div>
+                                                                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end page-content-wrapper-->
+
+                    </div>
+                    <!-- Container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <script>document.write(new Date().getFullYear())</script> © Agroxa <span
+                                    class="d-none d-sm-inline-block">- Crafted with <i class="mdi mdi-heart text-primary"></i> by
+                                    Themesbrand.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title px-3 py-4">
+                    <a href="javascript:void(0);" class="right-bar-toggle float-end">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Settings</h5>
+                </div>
+
+                <!-- Settings -->
+                <hr class="" />
+                <h6 class="text-center mb-0">Choose Layouts</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+                        <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-2.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch"
+                            data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css" />
+                        <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-3.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="form-check form-switch mb-5">
+                        <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch"
+                            data-appStyle="assets/css/app-rtl.min.css" />
+                        <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <h6 class="mb-2">Select Custom Colors</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input theme-color" type="radio" name="theme-mode"
+                            id="theme-default" value="default" onchange="document.documentElement.setAttribute('data-theme-mode', 'default')" checked>
+                        <label class="form-check-label" for="theme-default">Default</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input theme-color" type="radio" name="theme-mode"
+                            id="theme-red" value="red" onchange="document.documentElement.setAttribute('data-theme-mode', 'red')">
+                        <label class="form-check-label" for="theme-red">Red</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input theme-color" type="radio" name="theme-mode"
+                            id="theme-green" value="green" onchange="document.documentElement.setAttribute('data-theme-mode', 'green')">
+                        <label class="form-check-label" for="theme-green">Green</label>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- Peity JS -->
+        <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+        <script src="assets/libs/morris.js/morris.min.js"></script>
+        <script src="assets/libs/raphael/raphael.min.js"></script>
+
+        <script src="assets/js/pages/dashboard.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+</html>
