@@ -36,8 +36,12 @@ class ProductController extends Controller
             $query->where('stock_quantity', '<=', \DB::raw('min_stock_level'));
         }
 
-        if ($request->filled('category')) {
-            $query->where('category', $request->category);
+        if ($request->filled('category_id')) {
+            $query->where('category_id', $request->category_id);
+        }
+
+        if ($request->filled('brand_id')) {
+            $query->where('brand_id', $request->brand_id);
         }
 
         $products = $query->paginate(15);
@@ -60,10 +64,11 @@ class ProductController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'brand_id' => 'nullable|exists:brands,id',
             'sku' => 'required|string|max:100|unique:products',
             'barcode' => 'nullable|string|max:100|unique:products',
             'description' => 'nullable|string',
-            'category' => 'nullable|string|max:100',
+            'category_id' => 'nullable|exists:product_categories,id',
             'cost_price' => 'required|numeric|min:0',
             'selling_price' => 'required|numeric|min:0',
             'stock_quantity' => 'required|integer|min:0',
@@ -104,10 +109,11 @@ class ProductController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'brand_id' => 'nullable|exists:brands,id',
             'sku' => 'required|string|max:100|unique:products,sku,' . $product->id,
             'barcode' => 'nullable|string|max:100|unique:products,barcode,' . $product->id,
             'description' => 'nullable|string',
-            'category' => 'nullable|string|max:100',
+            'category_id' => 'nullable|exists:product_categories,id',
             'cost_price' => 'required|numeric|min:0',
             'selling_price' => 'required|numeric|min:0',
             'stock_quantity' => 'required|integer|min:0',

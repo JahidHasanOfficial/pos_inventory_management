@@ -28,10 +28,18 @@
                                 <input type="text" name="search" class="form-control" placeholder="Search by name, SKU, barcode..." value="{{ request('search') }}">
                             </div>
                             <div class="col-md-2">
-                                <select name="category" class="form-select">
+                                <select name="brand_id" class="form-select">
+                                    <option value="">All Brands</option>
+                                    @foreach(\App\Models\Brand::active()->ordered()->get() as $brand)
+                                    <option value="{{ $brand->id }}" {{ request('brand_id') == $brand->id ? 'selected' : '' }}>{{ $brand->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <select name="category_id" class="form-select">
                                     <option value="">All Categories</option>
-                                    @foreach(\App\Models\Product::distinct()->pluck('category')->filter()->values() as $category)
-                                    <option value="{{ $category }}" {{ request('category') == $category ? 'selected' : '' }}>{{ $category }}</option>
+                                    @foreach(\App\Models\ProductCategory::active()->ordered()->get() as $category)
+                                    <option value="{{ $category->id }}" {{ request('category_id') == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -56,6 +64,7 @@
                             <tr>
                                 <th>Image</th>
                                 <th>Product</th>
+                                <th>Brand</th>
                                 <th>SKU</th>
                                 <th>Category</th>
                                 <th>Stock</th>
@@ -80,8 +89,9 @@
                                     </h5>
                                     <p class="text-muted mb-0">{{ Str::limit($product->description, 50) }}</p>
                                 </td>
+                                <td>{{ $product->brand ? $product->brand->name : 'N/A' }}</td>
                                 <td>{{ $product->sku }}</td>
-                                <td>{{ $product->category ?: 'N/A' }}</td>
+                                <td>{{ $product->category ? $product->category->name : 'N/A' }}</td>
                                 <td>
                                     <span class="badge {{ $product->isLowStock() ? 'bg-warning' : 'bg-success' }}">
                                         {{ $product->stock_quantity }} {{ $product->unit }}

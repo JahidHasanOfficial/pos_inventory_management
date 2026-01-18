@@ -53,6 +53,8 @@ Route::middleware('auth')->group(function () {
     // Resource Routes for CRUD operations
     Route::middleware('role:admin,manager')->group(function () {
         Route::resource('products', \App\Http\Controllers\Inventory\ProductController::class);
+        Route::resource('categories', \App\Http\Controllers\Inventory\CategoryController::class);
+        Route::resource('brands', \App\Http\Controllers\Inventory\BrandController::class);
         Route::resource('suppliers', \App\Http\Controllers\Inventory\SupplierController::class);
         Route::resource('customers', \App\Http\Controllers\CustomerController::class);
         Route::resource('sales', \App\Http\Controllers\POS\SaleController::class)->except(['create', 'store']);

@@ -4,16 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Product extends Model
 {
     protected $fillable = [
         'name',
+        'brand_id',
         'sku',
         'barcode',
         'description',
-        'category',
+        'category_id',
         'cost_price',
         'selling_price',
         'stock_quantity',
@@ -27,6 +29,22 @@ class Product extends Model
         'selling_price' => 'decimal:2',
         'is_active' => 'boolean',
     ];
+
+    /**
+     * Get the brand that owns the product.
+     */
+    public function brand(): BelongsTo
+    {
+        return $this->belongsTo(Brand::class);
+    }
+
+    /**
+     * Get the category that owns the product.
+     */
+    public function category(): BelongsTo
+    {
+        return $this->belongsTo(ProductCategory::class, 'category_id');
+    }
 
     /**
      * Get the stocks for the product.

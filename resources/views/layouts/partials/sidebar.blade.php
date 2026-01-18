@@ -79,6 +79,32 @@
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-tag-multiple"></i>
+                        <span>Categories</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('categories.index') }}">All Categories</a></li>
+                        @if(auth()->user()->isAdmin())
+                        <li><a href="{{ route('categories.create') }}">Add Category</a></li>
+                        @endif
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-label"></i>
+                        <span>Brands</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('brands.index') }}">All Brands</a></li>
+                        @if(auth()->user()->isAdmin())
+                        <li><a href="{{ route('brands.create') }}">Add Brand</a></li>
+                        @endif
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-truck-delivery"></i>
                         <span>Suppliers</span>
                     </a>
